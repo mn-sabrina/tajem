@@ -1,0 +1,764 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul,ol {
+    list-style-type: none;
+}
+.clr {
+    clear: both;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+/*==== navbar part css from here==== */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.nav-main {
+    display: flex;
+}
+.logo {
+    width: 200px;
+}
+.logo img {
+    padding-top: 15px;
+}
+.menu {
+    width: 740px;
+    text-align: right;
+    line-height: 80px;
+}
+.menu ul li {
+    display: inline-block;
+    padding-left: 25px;
+}
+.menu ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: all linear .3s;
+    position: relative;
+}
+.menu ul li a:hover {
+    color: #11bcb5;
+}
+
+/*============ navbar part css goes here =============*/
+.banner-img {
+    background: url(../image/banner.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(9, 5, 47, 0.85), rgba(49, 29, 94, .85));
+    display: flex;
+    justify-content: center;
+}
+.banner-text{
+    text-align: center;
+    align-self: center;
+}
+.banner-text h2{
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 6px;
+    position: relative;
+}
+.banner-text h2::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color:#00e0d0;
+   bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+} 
+.banner-text p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 0 125px ;
+    padding-bottom: 56px;
+    padding-top: 44px;
+}
+.banner-text a{
+    border: 1px solid #00e0d0;
+    padding: 14px 17px;
+    font-family: 'Hammersmith One', sans-serif;
+    color: #00e0d0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.banner-text ul{
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner-text ul li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #bababc;
+    margin: 0 1px;
+}
+.banner-text ul .pointer{
+    background-color: #00e0d0;
+    border-color: #00e0d0;
+}
+/*============ intro part css goes here =============*/
+ #intro{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.intro-main{
+    display: flex;
+}
+.intro-image{
+    width: 380px;
+   
+    padding-left: 61px;
+   
+}
+.intro-text{
+    width: 560px;
+   
+    padding-left: 15px;
+   
+}
+.intro-text h2{
+    font-size: 22px;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    color: #413d4b;
+    text-transform: uppercase;
+   padding-bottom: 30px;
+
+}
+.intro-text p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #413d4b;
+    font-weight: 400;
+    line-height: 22px;
+    padding-bottom: 30px;
+}
+.intro-para p{
+    padding-bottom: 50px;
+}
+.intro-text a{
+    border: 1px solid #00e0d0;
+    padding: 14px 17px;
+    margin-top: 40px;
+    font-family: 'Hammersmith One', sans-serif;
+    color: #00e0d0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/*============ watch part css goes here =============*/
+.watch-img {
+    background: url(../image/watch.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 546px;
+}
+.watch-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(9, 5, 47, 0.85), rgba(49, 29, 94, .85));
+    display: flex;
+    justify-content: center;
+}
+.watch-text {
+    text-align: center;
+    align-self: center;
+}
+.watch-text i{
+    font-size: 100px;
+    color: #fff;
+}
+.watch-text h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+    padding-top: 30px;
+}
+/*============ service part css goes here =============*/
+#service{
+    padding-bottom: 20px;
+}
+.service{
+    text-align: center;
+    align-self: center;
+}
+.service h2{
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    color: #413d4b;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+.service p{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    color: #2f2d35;
+    padding-top: 17px;
+    padding-bottom: 84px;
+    position: relative;
+}
+.service p::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color:#c6c4c9;
+    bottom: 66px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+}
+.service-main{
+    display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: center;
+   padding-bottom: 46px;
+}
+.service-item {
+    width: 313px;
+    height: 225px;
+    justify-content: space-between;
+} 
+.service-text h3{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #413d4b;
+    font-weight: 900;
+    padding-top: 35px;
+    padding-bottom: 25px;  
+}
+.service-text p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 0 35px;
+     
+}
+/*============ team part css goes here =============*/
+.team-img {
+    background: url(../image/team.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 710px;
+}
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(9, 5, 47, 0.85), rgba(49, 29, 94, .85));
+    display: flex;
+    justify-content: center;
+}
+.team-text {
+    text-align: center;
+}
+.team-text h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 71px;  
+}
+.team-text p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    color: #f9f9f9;
+    padding-top: 15px;
+    padding-bottom: 66px;
+    position: relative;
+}
+.team-text p::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color:#655d80;
+    bottom:35px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+} 
+.team-main{
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+.team-item{
+    width: 221px;
+    height: 309px;
+    border: 1px solid #77768a;
+    border-top: none;
+    text-align: center;
+}  
+.team-content {
+    text-align: center;
+    align-self: center;
+}
+.team-content h3{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 900;  
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.team-content h4{
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #fafafa;
+    font-weight: 300;  
+    text-transform: uppercase;
+}
+.para{
+    text-align: center;
+   
+}
+ .para h4{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #f3f3f3;
+    font-weight: 300; 
+    padding-top: 70px; 
+    padding-bottom: 40px;
+}
+.para a{
+    border: 1px solid #00e0d0;
+    padding: 14px 17px;
+    font-family: 'Hammersmith One', sans-serif;
+    color: #00e0d0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/*============ gallery part css goes here =============*/
+#gallery{
+    padding-bottom: 69px;
+}
+.gallery-text {
+    text-align: center;
+}
+.gallery-text h2{
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    color: #413d4b;
+    text-transform: uppercase;
+    padding-top: 70px; 
+}
+.gallery-text p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    color: #2f2d35;
+    padding-top: 15px;
+    padding-bottom: 66px;
+    position: relative;
+}
+.gallery-text p::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color:#655d80;
+    bottom:35px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+} 
+.gallery-topics{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+}
+.gallery-topics a{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #413d4b;
+}
+.gallery-topics a{
+    border: 1px solid #ddd;
+    padding: 14px 13px;
+    color: #66636d;
+    margin-right: 10px;
+    margin-bottom: 50px;   
+}
+.gallery-main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-item{
+    width: 16.666%;
+    line-height: 0;
+}
+.gallery {
+    text-align: center;
+    align-self: center;
+    padding-top: 69px;
+}
+.gallery a{
+    border: 1px solid #00e0d0;
+    padding: 14px 17px;
+    font-family: 'Hammersmith One', sans-serif;
+    color: #00e0d0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/*============ ceo part css goes here =============*/
+.ceo-img {
+    background: url(../image/ceo.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 499px;
+}
+.ceo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(9, 5, 47, 0.85), rgba(49, 29, 94, .85));
+    display: flex;
+    justify-content: center;
+}
+.ceo-text {
+    text-align: center;
+    align-self: center;
+}
+.ceo-text i{
+    padding-bottom: 48px;
+    color: #fff;
+    font-size:25px;
+}
+.ceo-text p{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 26px;
+    padding: 0 98px;
+    padding-bottom: 35px;
+}
+.ceo-text h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+   
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+}
+.ceo-text h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+.zero{
+    text-align: center;
+}
+.zero ul li{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 9px;
+}
+.zero ul .dot{
+    position: relative;
+}
+.zero ul .dot::after{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    background-color: #00e0d0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+/*============ contact part css goes here =============*/
+#contact{
+    padding-top: 62px;
+    padding-bottom: 65px;
+}
+.contact-main{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-address{
+    width: 500px;
+}
+.contact-address h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;   
+    padding-bottom: 32px;
+}
+input{
+    width: 100%;
+    height: 44px;
+    border: 1px solid #e5e5e5;
+    padding-left: 20px;
+    margin-bottom: 23px;
+}
+textarea{
+    width: 100%;
+    height: 199px;
+    border: 1px solid #e5e5e5;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 21px;
+}
+button{
+    border: 1px solid #00e0d0;
+    padding: 12px 32px ;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00e0d0;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+.contact-repute{
+    width: 380px;
+    margin-left: 60px;
+}
+.contact-repute h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;   
+}
+.recognize{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-image1 img{
+   padding-top: 48px;
+   width: 137px;
+}
+.contact-image2 img{
+   padding-top: 48px;
+   width: 137px;
+   
+}
+/*============ footer part css goes here =============*/
+.footer-img {
+    background: url(../image/footer.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.footer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(9, 5, 47, 0.85), rgba(49, 29, 94, .85));
+    display: flex;
+    justify-content: center;
+}
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-item1{
+    width: 300px;
+}
+.footer-item1 img{
+    padding-top: 70px;
+}
+.footer-item1 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 26px; 
+    padding: 13px 14px 14px 0; 
+}
+.footer-item2{
+    width: 300px;
+}
+.footer-item2 h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color : #fff;
+    text-transform: uppercase;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+.add-location{
+    display: flex;
+}
+.add-location i{
+    color: #fff;
+    margin-right: 17px;
+    padding-top: 4px;
+}
+.add-location p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color : #fff;
+    line-height: 26px;
+    padding: 0 12px;
+}
+.add-location1 i{
+    color: #fff;
+    margin-right: 17px;
+    padding-top: 4px;
+}
+.add-location1 span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color : #fff;
+}
+.footer-item3{
+    width: 300px;
+}
+.footer-item3 h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color : #fff;
+    text-transform: uppercase;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+.footer-item3 form input{
+    width: 212px;
+    height: 44px;
+    background: transparent;
+    padding-left: 15px;
+    border: 1px solid #9e98b0;
+    margin-right: 10px;
+    padding-top: 6px;
+    
+}
+.subscribe button1{
+    padding : 14px 21px;
+    background-color: #a09ab3;
+    border : 0px;
+
+}
+.subscribe input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color : #cecbd7;
+    font-size: 14px;
+    line-height: 26px;
+    
+}
+.subscribe button1 i{
+    padding-top: 4px;
+    font-size: 20px;
+}
+.social{
+    display: flex;
+}
+.social i{
+    font-size: 18px;
+    border: 1px solid #f1f0f4;
+    border-radius: 50%;
+    padding: 10px;
+    color : #fff;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    margin-right: 9px;
+}
+.last-part{
+    padding-top: 52px;
+}
+.last-part ul li{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color : #fff;
+    text-transform: uppercase;
+    text-align: left;   
+    padding-right: 35px;
+    display: inline-block;
+}
+.copyright{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color : #fff;
+    text-align: right;
+}
+/*============ watch part css goes here =============*/
+/*============ watch part css goes here =============*/
+/*============ watch part css goes here =============*/
+/*============ watch part css goes here =============*/
